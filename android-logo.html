@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="android">
+      <div class="head">
+        <div class="left-eye"></div>
+        <div class="right-eye"></div>
+        <div class="left-antenna"></div>
+        <div class="right-antenna"></div>
+      </div>
+      <div class="body">
+        <div class="left-arm"></div>
+        <div class="right-arm"></div>
+        <div class="left-foot"></div>
+        <div class="right-foot"></div>
+      </div>
+  </div>
+</body>
+
+  <style>
+    .android {
+      width: 400px;
+      height: 500px;
+      margin: auto;
+    }
+    
+    div div {
+      background: rgb(99, 201, 41);
+      position: absolute;
+    }
+   .head {
+     width: 100px;
+     height: 50px;
+     border-radius: 100px 100px 0px 0px;
+   }
+
+   .left-eye, .right-eye {
+     position: absolute;
+     top: 30px;
+     background: white;
+     height: 10px;
+     width: 10px;
+     border-radius: 100%;
+   }
+   .left-eye {
+     left: 20px;
+   }
+   .right-eye {
+     right: 20px;
+   }
+
+   .left-antenna, .right-antenna {
+      position: absolute;
+      width: 4px;
+      height: 50px;
+      top: -30px;
+   }
+
+   .left-antenna {
+     transform: rotate(-30deg)
+   }
+
+   .right-antenna {
+     transform: rotate(30deg);
+     right: 0px;
+   }
+
+   .body {
+     width: 100px;
+     height: 100px;
+     position: absolute;
+     border-radius: 0px 0px 10px 10px;
+     top: 70px;
+   }
+
+   .left-arm, .right-arm, .left-foot, .right-foot {
+     width: 20px;
+     height: 80px;
+     position: absolute;
+     border-radius: 10px;
+     
+   }
+
+   .left-arm {
+     left: -30px;
+     top: 10px;
+   }
+
+   .right-arm {
+     right: -30px;
+     top: 10px;
+   }
+
+   .left-foot {
+     top: 50px;
+     left: 20px;
+   }
+   .right-foot {
+     top: 50px;
+     right: 20px;
+   }
+
+   :hover.right-arm {
+     transform: rotate(-5deg);
+   }
+   :hover.left-arm {
+     transform: rotate(5deg);
+   }
+   :hover.head {
+    transform: rotate(-5deg);
+   }
+  </style>
+</html>
